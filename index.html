@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactive Background</title>  
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+
+</head>
+<body>  
+
+    <div id="particles-js"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Techida</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>  
+            <li><a href="#">Contact Us</a></li>
+        </ul>  
+        <a href="#" class="join-now">Join Now</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1><span class="highlight">Excellent IT Solutions</span> For Your Success</h1>
+            <p>At Any Rate, Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit...</p>
+            <a href="#" class="btn">Join Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="./accec376-6fd5-4e99-be8d-805b1b45efcd.png" alt="Tech Illustration">
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>What We’re Offering?</h2>
+        <p>As A Matter Of Fact...</p>
+
+        <div class="service-box">
+            <div class="service">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Lorem Ipsum...</p>
+                <a href="#" class="learn-more">Learn More &rarr;</a>
+            </div>
+            <div class="service">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Digital Marketing</h3>
+                <p>Lorem Ipsum...</p>
+                <a href="#" class="learn-more">Learn More &rarr;</a>
+            </div>
+            <div class="service">
+                <i class="fas fa-search"></i>
+                <h3>SEO Services</h3>
+                <p>Lorem Ipsum...</p>
+                <a href="#" class="learn-more">Learn More &rarr;</a>
+            </div>
+            <div class="service">
+                <i class="fas fa-bug"></i> <!-- Ícone de inseto -->
+                <h3>Insect Control</h3>
+                <p>Lorem Ipsum...</p>
+                <a href="#" class="learn-more">Learn More &rarr;</a>
+            </div>
+            <div class="service">
+                <i class="fas fa-paint-roller"></i> <!-- Ícone de bandeja de tinta -->
+                <h3>Painting Services</h3>
+                <p>Lorem Ipsum...</p>
+                <a href="#" class="learn-more">Learn More &rarr;</a>
+            </div>
+            <div class="service">
+                <i class="fab fa-android"></i> <!-- Ícone do Android -->
+                <h3>Android Development</h3>
+                <p>Lorem Ipsum...</p>
+                <a href="#" class="learn-more">Learn More &rarr;</a>
+            </div>
+        </div>
+        
+    </section>
+    
+
+    <!-- Script para o fundo de partículas -->
+    <script>
+        particlesJS('particles-js',
+          {
+            "particles": {
+              "number": {
+                "value": 80,
+                "density": {
+                  "enable": true,
+                  "value_area": 800
+                }
+              },
+              "color": {
+                "value": "#00ff00"
+              },
+              "shape": {
+                "type": "circle",
+                "stroke": {
+                  "width": 0,
+                  "color": "#000000"
+                }
+              },
+              "opacity": {
+                "value": 0.5,
+                "random": false,
+                "anim": {
+                  "enable": false,
+                  "speed": 1,
+                  "opacity_min": 0.1,
+                  "sync": false
+                }
+              },
+              "size": {
+                "value": 3,
+                "random": true,
+                "anim": {
+                  "enable": false,
+                  "speed": 40,
+                  "size_min": 0.1,
+                  "sync": false
+                }
+              },
+              "line_linked": {
+                "enable": true,
+                "distance": 150,
+                "color": "#00ff00",
+                "opacity": 0.4,
+                "width": 1
+              },
+              "move": {
+                "enable": true,
+                "speed": 6,
+                "direction": "none",
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                  "enable": false,
+                  "rotateX": 600,
+                  "rotateY": 1200
+                }
+              }
+            },
+            "interactivity": {
+              "detect_on": "canvas",
+              "events": {
+                "onhover": {
+                  "enable": true,
+                  "mode": "repulse"
+                },
+                "onclick": {
+                  "enable": true,
+                  "mode": "push"
+                },
+                "resize": true
+              },
+              "modes": {
+                "repulse": {
+                  "distance": 100,
+                  "duration": 0.4
+                },
+                "push": {
+                  "particles_nb": 4
+                }
+              }
+            },
+            "retina_detect": true
+          }
+        );
+    </script>
+
+</body>
+</html>
